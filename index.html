@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portifolio DevJhon</title>
+</head>
+
+<body>
+    <div class="particulas">
+
+    </div>
+    <nav class="navegar">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menuL"> inicio</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menuL"> projetos</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menuL">sobre</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menuL">contatos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabeca">
+
+        <img src="Jhon.jpg.jpeg" alt="foto do jhon" class="fotoP">
+        <h1>Jhon Nascimento</h1>
+        <p class="cabecalhoST">desenvolvedor full-stack</p>
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobreT">Sobre mim</h2>
+        <div class="sobreC">
+            <p class="sobreP">
+                Olá! Meu nome é Jhon Nascimento, e sou um desenvolvedor full-stack apaixonado por criar soluções
+                inovadoras e eficientes. Com experiência em tecnologias como HTML, CSS, JavaScript, Python e Node.js,
+                tenho o compromisso de transformar ideias em realidade digital. Minha jornada no desenvolvimento web
+                começou com a busca por resolver problemas práticos e cresceu para incluir projetos desafiadores que
+                exigem criatividade e habilidades técnicas.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetosT">Meus Projetos</h2>
+        <div class="projetosC">
+            <div class="projetos-card">
+                <img src="petMachine.png" alt="Projeto 1" class="projetos-img">
+                <div class="CTprojeto">
+                    <h3 class="info-projeto">Pet Machine</h3>
+                    <p class="paragrafo-projeto">Um projeto de maquina para banho de animais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatosT">Entre em contato conosco</h2>
+        <form class="FormC" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupoF">
+                <input placeholder="Nome" class="campoF" id="nome" type="text">
+            </div>
+            <div class="grupoF">
+                <textarea class="campoF" placeholder="Digite sua mensagem" id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="botaoF">Enviar mensagem</button>
+        </form>
+    </section>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault()
+
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5591985586908';
+
+            const texto = `Olá, meu nome é ${nome}. ${mensagem}`
+            const formatmsg = encodeURIComponent(texto)
+
+            const url = `https://wa.me/${telefone}?text=${formatmsg}`;
+            window.open(url, '_blank')
+        }
+
+        console.log(url)
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #4f46e5;
+    --secondary-color: #7c3aed;
+    --escuro: #0f172a;
+    --maisEscuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--escuro);
+    color: var(--claro);
+}
+
+.navegar {
+    display: fixed;
+    top: 0;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    z-index: 100;
+    padding: 1.5rem;
+    background-color: rgb(15, 23, 42, 0.8);
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.menuL {
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.menuL::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transition: width 0.6s ease;
+}
+
+.menuL:hover::after {
+    width: 100%;
+}
+
+.cabeca {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cabecalhoST {
+    font-size: 1.5rem;
+    color: var(--claro);
+}
+
+.fotoP {
+    width: 270px;
+    height: 275px;
+    box-shadow: 0 0 10px var(--secondary-color);
+    border-radius: 50%;
+    border: 4px solid var(--vidro);
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--claro);
+    font-weight: bold;
+    margin: 20px;
+}
+
+.cabecalhoST {
+    font-size: 2rem;
+    color: var(--claro);
+}
+
+.sobre {
+    padding: 6rem 2rem;
+}
+
+.sobreT {
+    font-size: 3rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobreC {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--claro);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.sobreP {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.projetos {
+    padding: 6rem 2rem;
+    color: var(--claro);
+}
+
+.projetosT {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+}
+
+.projetos-card:hover {
+    box-shadow: 0 10px 20px var(--secondary-color);
+    transform: translateY(-10px) scale(1.05);
+}
+
+
+.projetosC {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.projetos-card {
+    background: rgba(255, 255, 255, 0 0.8);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--secondary-color);
+    overflow: hidden;
+    transition: all 0.7s ease;
+    cursor: pointer;
+
+}
+
+.projetos-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info-projeto {
+    margin-bottom: 5px;
+}
+
+.paragrafo-projeto {
+    color: rgba(250, 245, 245, 0.8);
+    line-height: 1.3rem;
+}
+
+.CTprojeto {
+    padding: 1.5rem;
+}
+
+.contatos {
+    padding: 6rem 2rem;
+}
+
+.contatosT {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+}
+
+.FormC {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid var(--secondary-color);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+}
+
+.campoF {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--claro);
+    outline: none;
+}
+
+.campoF:focus {
+    border-color: var(--claro);
+    box-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
+}
+
+.grupoF {
+    margin-bottom: 1.5rem;
+}
+
+.botaoF {
+    color: var(--claro);
+    background: linear-gradient(90deg, var(--escuro), var(--secondary-color));
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.4 ease;
+}
+
+.botaoF:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px var(--primary-color);
+}
+
+.particulas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: radial-gradient(circle at 10% 20%, var(--primary-color) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, var(--secondary-color) 0%, transparent 15%),
+        var(--maisEscuro);
+}
+
+@keyframes flutuar {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
