@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="600" viewBox="0 0 1024 600" fill="none">
+  <defs>
+    <linearGradient id="background" x1="30" y1="30" x2="994" y2="570" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#151C34"/>
+      <stop offset="1" stop-color="#21183C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="600" rx="28" fill="url(#background)"/>
+  <rect x="28" y="28" width="968" height="544" rx="22" fill="#0B1020" stroke="#51457A" stroke-width="2"/>
+  <path d="M50 28h924a22 22 0 0 1 22 22v52H28V50a22 22 0 0 1 22-22Z" fill="#171D32"/>
+  <circle cx="60" cy="65" r="8" fill="#FF7A90"/>
+  <circle cx="88" cy="65" r="8" fill="#F6C177"/>
+  <circle cx="116" cy="65" r="8" fill="#85D3A3"/>
+  <text x="512" y="73" fill="#BAC2D6" font-family="Segoe UI, Arial, sans-serif" font-size="20" text-anchor="middle">PROJECT NODE · MÓDULOS COMMONJS</text>
+
+  <rect x="60" y="126" width="330" height="408" rx="16" fill="#101729" stroke="#303952" stroke-width="2"/>
+  <text x="88" y="174" fill="#B69CFF" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700">ESTRUTURA</text>
+  <path d="M102 203v245m0-208h30m-30 68h30m-30 68h30m-30 68h30" stroke="#555D7B" stroke-width="3" stroke-linecap="round"/>
+  <text x="147" y="246" fill="#F1F3FB" font-family="Consolas, monospace" font-size="22">src/</text>
+  <text x="147" y="282" fill="#85D3A3" font-family="Consolas, monospace" font-size="20">main.js</text>
+  <text x="147" y="350" fill="#F1F3FB" font-family="Consolas, monospace" font-size="22">services/</text>
+  <text x="147" y="386" fill="#8B7BFF" font-family="Consolas, monospace" font-size="19">products.js</text>
+  <text x="147" y="422" fill="#8B7BFF" font-family="Consolas, monospace" font-size="19">config.js</text>
+  <text x="147" y="458" fill="#8B7BFF" font-family="Consolas, monospace" font-size="19">database.js</text>
+  <rect x="88" y="484" width="270" height="1" fill="#303952"/>
+  <text x="88" y="514" fill="#BAC2D6" font-family="Segoe UI, Arial, sans-serif" font-size="16">Produtos · configuração · conexão simulada</text>
+
+  <rect x="420" y="126" width="544" height="408" rx="16" fill="#080C16" stroke="#303952" stroke-width="2"/>
+  <text x="454" y="174" fill="#BAC2D6" font-family="Consolas, monospace" font-size="18">main.js</text>
+  <circle cx="924" cy="165" r="6" fill="#85D3A3"/>
+  <path d="M454 194h476" stroke="#303952" stroke-width="2"/>
+  <text x="454" y="248" fill="#8B7BFF" font-family="Consolas, monospace" font-size="22">require</text>
+  <text x="548" y="248" fill="#F1F3FB" font-family="Consolas, monospace" font-size="22">("./services/products")</text>
+  <text x="454" y="302" fill="#85D3A3" font-family="Consolas, monospace" font-size="21">getfullname</text>
+  <text x="603" y="302" fill="#BAC2D6" font-family="Consolas, monospace" font-size="21">("501", "teclado")</text>
+  <rect x="454" y="342" width="476" height="1" fill="#303952"/>
+  <text x="454" y="390" fill="#B69CFF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">SERVIÇOS SEPARADOS</text>
+  <text x="454" y="430" fill="#BAC2D6" font-family="Segoe UI, Arial, sans-serif" font-size="18">Código organizado em módulos reutilizáveis.</text>
+  <text x="454" y="478" fill="#85D3A3" font-family="Consolas, monospace" font-size="17">CommonJS · Node.js</text>
+</svg>

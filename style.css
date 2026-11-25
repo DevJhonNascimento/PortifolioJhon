@@ -213,6 +213,7 @@ h1 span {
 .fotoP {
     display: block;
     width: min(100%, 340px);
+    height: auto;
     aspect-ratio: 1;
     justify-self: center;
     border: 4px solid rgba(182, 156, 255, 0.45);
@@ -299,33 +300,12 @@ h1 span {
     box-shadow: 0 15px 34px rgba(0, 0, 0, 0.22);
 }
 
-.projetos-img,
-.project-art {
-    display: grid;
+.projetos-img {
+    display: block;
     width: 100%;
     height: 210px;
-    place-items: center;
-}
-
-.projetos-img {
     object-fit: cover;
-}
-
-.project-art {
-    background:
-        radial-gradient(circle at 30% 25%, rgba(182, 156, 255, 0.26), transparent 12rem),
-        linear-gradient(145deg, #151c34, #21183c);
-}
-
-.project-art span {
-    color: var(--secondary);
-    font-size: 4rem;
-    font-weight: 800;
-    letter-spacing: -0.08em;
-}
-
-.project-art-cpp span {
-    font-size: 3.2rem;
+    background: #11182a;
 }
 
 .CTprojeto {
@@ -380,6 +360,22 @@ h1 span {
     border: 1px solid var(--border);
     border-radius: 1rem;
     background: var(--surface);
+}
+
+.contact-email {
+    margin: 1.25rem 0 0;
+    color: var(--muted);
+    text-align: center;
+}
+
+.contact-email a {
+    color: var(--secondary);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact-email a:hover {
+    text-decoration: underline;
 }
 
 .grupoF {

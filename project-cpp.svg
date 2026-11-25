@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="600" viewBox="0 0 1024 600" fill="none">
+  <defs>
+    <linearGradient id="background" x1="30" y1="30" x2="994" y2="570" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#151C34"/>
+      <stop offset="1" stop-color="#21183C"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="105" y1="166" x2="894" y2="492" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B7BFF"/>
+      <stop offset="1" stop-color="#B69CFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="600" rx="28" fill="url(#background)"/>
+  <rect x="28" y="28" width="968" height="544" rx="22" fill="#0B1020" stroke="#51457A" stroke-width="2"/>
+  <path d="M50 28h924a22 22 0 0 1 22 22v52H28V50a22 22 0 0 1 22-22Z" fill="#171D32"/>
+  <circle cx="60" cy="65" r="8" fill="#FF7A90"/>
+  <circle cx="88" cy="65" r="8" fill="#F6C177"/>
+  <circle cx="116" cy="65" r="8" fill="#85D3A3"/>
+  <text x="512" y="73" fill="#BAC2D6" font-family="Segoe UI, Arial, sans-serif" font-size="20" text-anchor="middle">INSTRUMENTO MUSICAL VIRTUAL · C++ / WINDOWS</text>
+  <text x="512" y="153" fill="#F1F3FB" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="middle">Cada tecla toca uma nota</text>
+  <text x="512" y="188" fill="#BAC2D6" font-family="Consolas, monospace" font-size="18" text-anchor="middle">_getch() lê as teclas · Beep() reproduz o som</text>
+
+  <g font-family="Consolas, monospace" text-anchor="middle">
+    <rect x="92" y="238" width="122" height="142" rx="16" fill="#171D32" stroke="#51457A" stroke-width="2"/>
+    <rect x="92" y="238" width="122" height="142" rx="16" stroke="url(#accent)" stroke-width="2"/>
+    <text x="153" y="319" fill="#B69CFF" font-size="50" font-weight="700">A</text>
+    <text x="153" y="352" fill="#BAC2D6" font-size="19">MI</text>
+    <rect x="236" y="238" width="122" height="142" rx="16" fill="#171D32" stroke="#51457A" stroke-width="2"/>
+    <text x="297" y="319" fill="#B69CFF" font-size="50" font-weight="700">S</text>
+    <text x="297" y="352" fill="#BAC2D6" font-size="19">SI</text>
+    <rect x="380" y="238" width="122" height="142" rx="16" fill="#171D32" stroke="#51457A" stroke-width="2"/>
+    <text x="441" y="319" fill="#B69CFF" font-size="50" font-weight="700">D</text>
+    <text x="441" y="352" fill="#BAC2D6" font-size="19">SOL</text>
+    <rect x="524" y="238" width="122" height="142" rx="16" fill="#171D32" stroke="#51457A" stroke-width="2"/>
+    <text x="585" y="319" fill="#B69CFF" font-size="50" font-weight="700">F</text>
+    <text x="585" y="352" fill="#BAC2D6" font-size="19">RE</text>
+    <rect x="668" y="238" width="122" height="142" rx="16" fill="#171D32" stroke="#51457A" stroke-width="2"/>
+    <text x="729" y="319" fill="#B69CFF" font-size="50" font-weight="700">G</text>
+    <text x="729" y="352" fill="#BAC2D6" font-size="19">LA</text>
+    <rect x="812" y="238" width="122" height="142" rx="16" fill="#171D32" stroke="#51457A" stroke-width="2"/>
+    <text x="873" y="319" fill="#B69CFF" font-size="50" font-weight="700">H</text>
+    <text x="873" y="352" fill="#BAC2D6" font-size="19">MI</text>
+  </g>
+
+  <rect x="336" y="428" width="352" height="74" rx="16" fill="#11182A" stroke="#303952" stroke-width="2"/>
+  <rect x="356" y="443" width="48" height="44" rx="9" fill="#8B7BFF"/>
+  <text x="380" y="473" fill="#FFFFFF" font-family="Consolas, monospace" font-size="24" font-weight="700" text-anchor="middle">Q</text>
+  <text x="426" y="473" fill="#BAC2D6" font-family="Segoe UI, Arial, sans-serif" font-size="19">encerra o instrumento</text>
+</svg>
