@@ -1,99 +1,178 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0a0f1c">
+    <meta name="description"
+        content="Portfólio de Jhon Nascimento: projetos e estudos em desenvolvimento web, JavaScript, Node.js, Python e C++.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Portfólio | Jhon Nascimento">
+    <meta property="og:description"
+        content="Conheça os projetos e estudos de Jhon Nascimento em desenvolvimento de software.">
     <link rel="stylesheet" href="style.css">
-    <title>Portifolio DevJhon</title>
+    <script src="script.js" defer></script>
+    <title>Portfólio | Jhon Nascimento</title>
 </head>
 
 <body>
-    <div class="particulas">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div class="particulas" aria-hidden="true"></div>
 
-    </div>
-    <nav class="navegar">
-        <ul class="menu">
-            <li>
-                <a href="#inicio" class="menuL"> inicio</a>
-            </li>
-            <li>
-                <a href="#projetos" class="menuL"> projetos</a>
-            </li>
-            <li>
-                <a href="#sobre" class="menuL">sobre</a>
-            </li>
-            <li>
-                <a href="#contatos" class="menuL">contatos</a>
-            </li>
-        </ul>
-    </nav>
+    <header class="site-header">
+        <nav class="navegar" aria-label="Navegação principal">
+            <a class="brand" href="#inicio" aria-label="Jhon Nascimento, início">JN</a>
+            <ul class="menu">
+                <li><a class="menuL" href="#inicio">Início</a></li>
+                <li><a class="menuL" href="#sobre">Sobre</a></li>
+                <li><a class="menuL" href="#projetos">Projetos</a></li>
+                <li><a class="menuL" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main id="inicio" class="cabeca">
-
-        <img src="Jhon.jpg.jpeg" alt="foto do jhon" class="fotoP">
-        <h1>Jhon Nascimento</h1>
-        <p class="cabecalhoST">desenvolvedor full-stack</p>
-
-    </main>
-
-    <section id="sobre" class="sobre">
-        <h2 class="sobreT">Sobre mim</h2>
-        <div class="sobreC">
-            <p class="sobreP">
-                Olá! Meu nome é Jhon Nascimento, e sou um desenvolvedor full-stack apaixonado por criar soluções
-                inovadoras e eficientes. Com experiência em tecnologias como HTML, CSS, JavaScript, Python e Node.js,
-                tenho o compromisso de transformar ideias em realidade digital. Minha jornada no desenvolvimento web
-                começou com a busca por resolver problemas práticos e cresceu para incluir projetos desafiadores que
-                exigem criatividade e habilidades técnicas.
-            </p>
-
-        </div>
-    </section>
-
-    <section id="projetos" class="projetos">
-        <h2 class="projetosT">Meus Projetos</h2>
-        <div class="projetosC">
-            <div class="projetos-card">
-                <img src="petMachine.png" alt="Projeto 1" class="projetos-img">
-                <div class="CTprojeto">
-                    <h3 class="info-projeto">Pet Machine</h3>
-                    <p class="paragrafo-projeto">Um projeto de maquina para banho de animais.</p>
+    <main id="conteudo">
+        <section id="inicio" class="cabeca" aria-labelledby="titulo-principal">
+            <div class="hero-copy">
+                <p class="eyebrow">Desenvolvedor full-stack</p>
+                <h1 id="titulo-principal">Olá, eu sou <span>Jhon Nascimento</span></h1>
+                <p class="hero-summary">
+                    Crio projetos e estudo tecnologias para transformar ideias em soluções digitais.
+                    Aqui você encontra um pouco do que venho desenvolvendo.
+                </p>
+                <div class="hero-actions">
+                    <a class="button" href="#projetos">Conheça meus projetos</a>
+                    <a class="button button-secondary" href="#contato">Vamos conversar</a>
                 </div>
             </div>
-        </div>
-    </section>
+            <img class="fotoP" src="Jhon.jpg.jpeg" alt="Jhon Nascimento" width="1200" height="1599">
+        </section>
 
-    <section id="contatos" class="contatos">
-        <h2 class="contatosT">Entre em contato conosco</h2>
-        <form class="FormC" id="formulario" onsubmit="enviarWhats(event)">
-            <div class="grupoF">
-                <input placeholder="Nome" class="campoF" id="nome" type="text">
+        <section id="sobre" class="sobre section" aria-labelledby="titulo-sobre">
+            <div class="section-heading">
+                <p class="eyebrow">Um pouco sobre mim</p>
+                <h2 id="titulo-sobre">Sobre mim</h2>
             </div>
-            <div class="grupoF">
-                <textarea class="campoF" placeholder="Digite sua mensagem" id="mensagem"></textarea>
+            <div class="sobreC">
+                <p class="sobreP">
+                    Sou desenvolvedor full-stack e gosto de criar soluções digitais para problemas práticos.
+                    Tenho estudado e trabalhado com desenvolvimento web, Python e Node.js, sempre buscando
+                    aprender e melhorar meus projetos.
+                </p>
+                <ul class="skills" aria-label="Tecnologias">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Node.js</li>
+                    <li>C++</li>
+                </ul>
             </div>
-            <button type="submit" class="botaoF">Enviar mensagem</button>
-        </form>
-    </section>
+        </section>
 
-    <script>
-        function enviarWhats(event) {
-            event.preventDefault()
+        <section id="projetos" class="projetos section" aria-labelledby="titulo-projetos">
+            <div class="section-heading">
+                <p class="eyebrow">Projetos e estudos</p>
+                <h2 id="titulo-projetos">O que tenho desenvolvido</h2>
+                <p class="section-summary">Uma seleção de projetos acadêmicos e experimentos pessoais.</p>
+            </div>
 
-            const nome = document.getElementById('nome').value;
-            const mensagem = document.getElementById('mensagem').value;
-            const telefone = '5591985586908';
+            <div class="projetosC">
+                <article class="projetos-card">
+                    <img class="projetos-img" src="petMachine.jpg"
+                        alt="Ilustração do conceito Pet Machine" width="1024" height="1024" loading="lazy">
+                    <div class="CTprojeto">
+                        <p class="project-type">Projeto acadêmico</p>
+                        <h3 class="info-projeto">Pet Machine</h3>
+                        <p class="paragrafo-projeto">
+                            Conceito de uma máquina automatizada para banho de animais, desenvolvido
+                            como solução acadêmica para simplificar e padronizar o cuidado com pets.
+                        </p>
+                        <p class="project-meta">
+                            <span>Projeto de interface</span>
+                            <span>HTML e CSS</span>
+                        </p>
+                    </div>
+                </article>
 
-            const texto = `Olá, meu nome é ${nome}. ${mensagem}`
-            const formatmsg = encodeURIComponent(texto)
+                <article class="projetos-card">
+                    <div class="project-art project-art-node" aria-hidden="true"><span>JS</span></div>
+                    <div class="CTprojeto">
+                        <p class="project-type">Estudos em Node.js</p>
+                        <h3 class="info-projeto">Módulos e serviços</h3>
+                        <p class="paragrafo-projeto">
+                            Exercícios práticos de organização de código com módulos CommonJS,
+                            serviços de produtos e simulação de conexão com banco de dados.
+                        </p>
+                        <p class="project-meta">
+                            <span>Node.js</span>
+                            <span>JavaScript</span>
+                            <span>Arquitetura modular</span>
+                        </p>
+                        <a class="project-link" href="https://github.com/DevJhonNascimento/ProjectNode"
+                            target="_blank" rel="noopener noreferrer">
+                            Ver repositório <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
 
-            const url = `https://wa.me/${telefone}?text=${formatmsg}`;
-            window.open(url, '_blank')
-        }
+                <article class="projetos-card">
+                    <div class="project-art project-art-cpp" aria-hidden="true"><span>C++</span></div>
+                    <div class="CTprojeto">
+                        <p class="project-type">Experimento para Windows</p>
+                        <h3 class="info-projeto">Instrumento musical virtual</h3>
+                        <p class="paragrafo-projeto">
+                            Aplicação de console em C++ que interpreta teclas pressionadas no
+                            Windows para reproduzir notas e explorar entrada de dados e lógica de controle.
+                        </p>
+                        <p class="project-meta">
+                            <span>C++</span>
+                            <span>Windows</span>
+                            <span>Aplicação de console</span>
+                        </p>
+                        <a class="project-link"
+                            href="https://github.com/DevJhonNascimento/ProjetoCOVID/blob/main/projeto.cc"
+                            target="_blank" rel="noopener noreferrer">
+                            Ver código <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    </script>
+        <section id="contato" class="contatos section" aria-labelledby="titulo-contato">
+            <div class="section-heading">
+                <p class="eyebrow">Entre em contato</p>
+                <h2 id="titulo-contato">Vamos conversar?</h2>
+                <p class="section-summary">
+                    Preencha os campos para abrir uma conversa no WhatsApp com a mensagem pronta.
+                    O envio é confirmado por você no aplicativo.
+                </p>
+            </div>
+            <form class="FormC" id="formulario">
+                <div class="grupoF">
+                    <label for="nome">Seu nome</label>
+                    <input class="campoF" id="nome" name="nome" type="text" autocomplete="name"
+                        placeholder="Como posso chamar você?" maxlength="80" required>
+                </div>
+                <div class="grupoF">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea class="campoF" id="mensagem" name="mensagem"
+                        placeholder="Escreva sua mensagem" rows="5" maxlength="1000" required></textarea>
+                </div>
+                <button class="botaoF" type="submit">Continuar pelo WhatsApp</button>
+            </form>
+        </section>
+    </main>
 
+    <footer class="site-footer">
+        <p>&copy; 2026 Jhon Nascimento</p>
+        <a href="https://github.com/DevJhonNascimento" target="_blank" rel="noopener noreferrer">
+            GitHub <span aria-hidden="true">↗</span>
+        </a>
+    </footer>
 </body>
 
 </html>

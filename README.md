@@ -1,15 +1,20 @@
-# Portfólio de Jhon Nascimento
+# Portfólio | Jhon Nascimento
 
-Portfólio pessoal estático feito com HTML e CSS. Apresenta informações sobre o desenvolvedor, um projeto e um formulário de contato que abre o WhatsApp.
+Portfólio pessoal estático feito com HTML, CSS e JavaScript. Apresenta projetos, tecnologias e um formulário que abre uma conversa do WhatsApp com a mensagem preenchida.
 
-## Visualizar
+## Executar localmente
 
-Abra `index.html` em um navegador. Não há dependências nem etapa de build.
+Abra `index.html` em um navegador. O projeto não requer dependências nem etapa de build.
+
+## Publicar com GitHub Pages
+
+No repositório, abra **Settings → Pages**, escolha **Deploy from a branch**, selecione a branch `main` e a pasta `/ (root)`. Salve para publicar o site.
 
 ## Arquivos
 
-- `index.html`: estrutura e conteúdo da página.
-- `style.css`: estilos e animações.
-- `Jhon.jpg.jpeg` e `petMachine.png`: imagens usadas na página.
+- `index.html`: estrutura, conteúdo e metadados da página.
+- `style.css`: estilos responsivos e acessíveis.
+- `script.js`: validação do formulário e abertura do WhatsApp.
+- `Jhon.jpg.jpeg` e `petMachine.jpg`: imagens do portfólio.
 
-O número de contato do formulário está configurado no código-fonte e é público neste repositório.
+O formulário abre o WhatsApp; a mensagem só é enviada depois que a pessoa confirma no aplicativo ou no WhatsApp Web. O número usado pelo formulário está no código-fonte e é público.
