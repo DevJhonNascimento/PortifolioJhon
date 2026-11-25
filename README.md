@@ -15,6 +15,6 @@ No repositório, abra **Settings → Pages**, escolha **Deploy from a branch**, 
 - `index.html`: estrutura, conteúdo e metadados da página.
 - `style.css`: estilos responsivos e acessíveis.
 - `script.js`: validação do formulário e abertura do WhatsApp.
-- `Jhon.jpg.jpeg`, `petMachine.jpg`, `project-node.svg` e `project-cpp.svg`: imagens do portfólio.
+- `Jhon.jpg.jpeg`, `project-node.svg` e `project-cpp.svg`: imagens do portfólio.
 
 O formulário abre o WhatsApp; a mensagem só é enviada depois que a pessoa confirma no aplicativo ou no WhatsApp Web. O número usado pelo formulário e o endereço de e-mail de contato são exibidos publicamente no site.
